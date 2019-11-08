@@ -57,18 +57,14 @@ function showtodo(){
     let ul = document.getElementById('my-todo');
     let nework = document.getElementById('newTodo').value;
     let ll = document.createElement('li');
-    let newDiv = document.createElement('div');
     ll.className = "col-2  d-flex justify-content-between align-self-center  mb-3";
     ll.appendChild(document.createTextNode(nework));
     let trash =document.createElement('button');
     trash.className = 'btn fas fa-trash-alt btn-info ; width:10px ; hight:10px;'
     let btn = trash.id = "del";
-    newDiv.appendChild(trash)
-    ll.appendChild(newDiv);
+    ll.appendChild(trash);
     ul.appendChild(ll);
     let  list = ll.id = "list" ;
-    newDiv.className="box";
-
     
 }
 
